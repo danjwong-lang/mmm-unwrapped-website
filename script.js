@@ -9,30 +9,7 @@ if (mobileMenu) {
     });
 }
 
-// Form submission handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            company: document.getElementById('company')?.value || '',
-            role: document.getElementById('role')?.value || '',
-            message: document.getElementById('message').value
-        };
-
-        // In production, this would send to your backend/email service
-        console.log('Form submitted:', formData);
-        
-        // Show success message
-        alert('Thank you for your interest! We will get back to you soon.');
-        
-        // Reset form
-        this.reset();
-    });
-}
+// Note: Contact form is handled by Formspree - no JavaScript needed
 
 // Smooth scrolling for anchor links (if any exist on the page)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
