@@ -2,10 +2,18 @@
 const mobileMenu = document.querySelector('.mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
-if (mobileMenu) {
+if (mobileMenu && navLinks) {
     mobileMenu.addEventListener('click', function() {
-        // In a full implementation, this would toggle the mobile menu
-        alert('Mobile menu functionality: In production, this would show/hide the navigation menu for mobile devices.');
+        navLinks.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        });
     });
 }
 
