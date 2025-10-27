@@ -548,6 +548,10 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -605,10 +609,22 @@ footer a:hover {
 
     .hero-visual {
         order: -1;
+        width: 100%;
+        overflow: hidden;
     }
 
     .dashboard-preview {
         max-width: 100%;
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .chart-placeholder {
+        gap: 0.5rem;
+    }
+
+    .metric-card {
         padding: 1rem;
     }
 
@@ -617,7 +633,12 @@ footer a:hover {
     }
 
     .metric-card p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+
+    .chart-visual {
+        padding: 0.75rem;
+        gap: 0.25rem;
     }
 
     .section-header h2 {
