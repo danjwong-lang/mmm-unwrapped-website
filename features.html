@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - MMM Unwrapped</title>
+    <title>How It Works - MMM Unwrapped</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NM2ZDY9N21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NM2ZDY9N21');
+</script>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-            <div class="logo">MMM Unwrapped</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html" class="active">Features</a></li>
-                <li><a href="team.html">Who We Are</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">MMM Unwrapped</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html" class="active">How It Works</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="cta-button">Get Started</a>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -29,149 +41,249 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="section-container">
-            <h1>Marketing Mix Modeling Features</h1>
-            <p>Discover how MMM Unwrapped delivers transparent, actionable marketing attribution insights</p>
+            <h1>How It Works</h1>
+            <p>Transparent, data-driven insights that show you what's really working</p>
         </div>
     </section>
 
-    <!-- Key Differentiators -->
-    <section class="differentiators">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>How We Differ from Existing Solutions</h2>
-                <p>Built with transparency and accuracy at the core</p>
-            </div>
+    <!-- Response Curves Section -->
+    <section>
+        <div class="container">
+            <div class="section-label">The Power of Response Curves</div>
+            <h2>Your Facebook ROAS looks great at $100K/month. But what happens at $200K?</h2>
+            <p class="section-intro">
+                Attribution and lift tests show whether your channels are driving results and incremental lift, but they don't tell you <strong>how much to spend</strong> on each channel. That's what response curves answer—and why they're one of the most underutilized tools in marketing measurement.
+            </p>
 
-            <div class="diff-list">
-                <div class="diff-item">
-                    <h3>🎨 Tailored Insights</h3>
-                    <p>Customized to the specific size and needs of your business. Our solution adapts to your unique market conditions and business model.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0; align-items: center;">
+                <div>
+                    <h3 style="color: var(--navy); font-size: 1.75rem; margin-bottom: 1.5rem;">Every channel has diminishing returns</h3>
+                    <p style="color: var(--gray); line-height: 1.8; margin-bottom: 1rem;">
+                        The real question is: <strong>"How far is your runway?"</strong>
+                    </p>
+                    <p style="color: var(--gray); line-height: 1.8; margin-bottom: 1rem;">
+                        Marginal ROI curves show you exactly where your next dollar starts working less hard. They're the difference between "scale what's working" and "scale until it stops working."
+                    </p>
+                    <p style="color: var(--gray); line-height: 1.8;">
+                        If your current measurement infrastructure doesn't show you this, you're optimizing blind.
+                    </p>
                 </div>
-
-                <div class="diff-item">
-                    <h3>🔬 Deep Testing</h3>
-                    <p>Thousands of tests across multiple time periods to pinpoint the true impact of each marketing channel. We validate results extensively to ensure accuracy.</p>
-                </div>
-
-                <div class="diff-item">
-                    <h3>⚡ Optimization</h3>
-                    <p>Budget recommendations that account for adstock carryover effects, diminishing returns from saturation, and your business constraints - ensuring every dollar is allocated where it drives the most profit.</p>
-                </div>
-
-                <div class="diff-item">
-                    <h3>✅ Robust Quality Checks</h3>
-                    <p>Multiple validation layers ensure insights are stable and reliable, preventing decisions based on faulty data. Your confidence in the results is our priority.</p>
-                </div>
-
-                <div class="diff-item">
-                    <h3>🔒 Secure & Scalable</h3>
-                    <p>Built with cutting-edge technology on AWS with a scalable architecture designed to handle growing data volumes and complexity.</p>
+                <div>
+                    <img src="curve_1.png" alt="Marginal ROI Curve" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(10, 22, 40, 0.15);">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Data Requirements & Outputs -->
-    <section id="data">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>What You Need to Get Started</h2>
-                <p>Simple data requirements, powerful insights</p>
-            </div>
-
-            <div class="data-grid">
-                <div class="data-card">
-                    <h4>📁 Data Inputs</h4>
-                    <ul>
-                        <li>CSV uploads</li>
-                        <li>Daily spend by channel</li>
-                        <li>12+ months of data</li>
-                    </ul>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0; align-items: center;">
+                <div>
+                    <img src="curve_2.png" alt="Response Curve" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(10, 22, 40, 0.15);">
                 </div>
-
-                <div class="data-card">
-                    <h4>📈 KPIs Modeled</h4>
-                    <ul>
-                        <li>Profit</li>
-                        <li>Revenue</li>
-                        <li>LTV</li>
-                        <li>New customers</li>
-                    </ul>
-                </div>
-
-                <div class="data-card">
-                    <h4>📊 Model Outputs</h4>
-                    <ul>
-                        <li>Response curves</li>
-                        <li>Marginal ROI</li>
-                        <li>Channel performance</li>
-                        <li>Optimization panel</li>
-                    </ul>
-                </div>
-
-                <div class="data-card">
-                    <h4>✓ Validation</h4>
-                    <ul>
-                        <li>Cross-validation MAPE</li>
-                        <li>R-Squared metrics</li>
-                        <li>Directional accuracy</li>
-                        <li>Pass/fail diagnostics</li>
-                    </ul>
+                <div>
+                    <h3 style="color: var(--navy); font-size: 1.75rem; margin-bottom: 1.5rem;">See the full picture</h3>
+                    <p style="color: var(--gray); line-height: 1.8; margin-bottom: 1rem;">
+                        Different channels have different saturation curves. Some have long runways for scaling, others hit diminishing returns quickly.
+                    </p>
+                    <p style="color: var(--gray); line-height: 1.8;">
+                        We build response curves and marginal ROI analysis for every channel at MMM Unwrapped.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technical Specifications -->
-    <section class="differentiators">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Technical Specifications</h2>
-                <p>Enterprise-grade technology built for performance and security</p>
-            </div>
+    <!-- What is MMM -->
+    <section style="background: var(--off-white);">
+        <div class="container">
+            <div class="section-label">Understanding MMM</div>
+            <h2>What is Media Mix Modeling?</h2>
+            <p class="section-intro">
+                Media Mix Modeling uses statistical analysis to understand how each marketing channel contributes to your business outcomes—<strong>independent of what platforms report</strong>. It's the gold standard for marketing attribution used by Fortune 500 companies.
+            </p>
 
-            <div class="features-grid">
+            <div class="features-grid" style="margin-top: 3rem;">
                 <div class="feature-card">
-                    <div class="feature-icon">☁️</div>
-                    <h3>AWS Infrastructure</h3>
-                    <p>Secure hosting on Amazon Web Services ensures your data is protected with industry-leading security protocols and compliance standards.</p>
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">How MMM differs from attribution</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">Attribution shows <em>if</em> a channel is working. MMM shows <em>how much</em> to spend on each channel for optimal results.</p>
                 </div>
-
+                
                 <div class="feature-card">
-                    <div class="feature-icon">📈</div>
-                    <h3>Scalable Architecture</h3>
-                    <p>Designed to handle growing data volumes and complexity as your business expands across multiple channels and markets.</p>
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Platform-independent measurement</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">See true performance without inflated platform metrics that all claim credit for the same conversion.</p>
                 </div>
-
+                
                 <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
-                    <h3>Advanced Analytics Engine</h3>
-                    <p>Powered by sophisticated statistical models and machine learning techniques to deliver accurate, reliable insights.</p>
+                    <h3 style="color: var(--navy); margin-bottom: 1rem;">Upper funnel visibility</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">Finally understand the impact of TV, OTT, and other upper-funnel channels that don't have direct attribution.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="contact.html" class="cta-button">Schedule a Demo</a>
+    <!-- Transparency Section -->
+    <section>
+        <div class="container">
+            <div class="section-label">Transparency</div>
+            <h2>"Trust the model"? Not with us.</h2>
+            <p class="section-intro">
+                That's the implicit message from most MMM vendors: here's your deck of numbers with little visibility into how we got there. You're not paying $100K+ for slides and a black box. You want to <strong>truly understand</strong> your media spend.
+            </p>
+
+            <div style="background: var(--navy); color: white; padding: 3rem; border-radius: 16px; margin: 3rem 0;">
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; color: white;">At MMM Unwrapped, we show you exactly how the model works</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4 style="color: var(--accent); margin-bottom: 0.75rem; font-size: 1.25rem;">The inputs we include</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Spend data, seasonality factors, promotional periods, external variables</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--accent); margin-bottom: 0.75rem; font-size: 1.25rem;">The methodology we use</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Statistical approaches, validation techniques, model selection criteria</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--accent); margin-bottom: 0.75rem; font-size: 1.25rem;">The assumptions we make</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">Adstock effects, saturation curves, baseline performance</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--accent); margin-bottom: 0.75rem; font-size: 1.25rem;">Why channels are weighted</h4>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">See how TV saturation, promo periods, or brand search are treated</p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 2rem; font-size: 1.125rem; line-height: 1.8; color: rgba(255,255,255,0.9);">
+                    Because if you don't understand the model, you can't pressure-test the outputs. You can't have informed conversations with finance and leadership. You can't confidently reallocate your budget.
+                </p>
             </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 1.5rem; color: var(--navy); font-weight: 600;">Transparency isn't a feature. It's the whole point.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section style="background: var(--off-white);">
+        <div class="container">
+            <div class="section-label">Deliverables</div>
+            <h2>What you get in every engagement</h2>
+            
+            <div class="benefits-grid" style="margin-top: 3rem;">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>Response curves for every channel</h3>
+                    <p>See exactly where diminishing returns start and how far you can scale each channel profitably.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Marginal ROI analysis</h3>
+                    <p>Know the ROI of your next dollar spent in every channel, not just historical averages.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Budget optimization recommendations</h3>
+                    <p>Clear guidance on where to increase spend, where to pull back, and expected impact.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Channel performance insights</h3>
+                    <p>Understand true contribution of each channel, accounting for adstock and saturation effects.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Validation metrics</h3>
+                    <p>Cross-validation MAPE, R-squared, directional accuracy, and pass/fail diagnostics.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Consulting to act on insights</h3>
+                    <p>We don't just hand you a dashboard. We help you interpret findings and implement changes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Ready to see how it works with your data?</h2>
+            <p>Schedule a call to discuss your marketing measurement needs</p>
+            <a href="contact.html" class="primary-cta">Get Started</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="logo" style="margin-bottom: 1rem; font-size: 1.75rem;">MMM Unwrapped</div>
-            <p>Transparent Media Mix Modeling for smarter marketing decisions</p>
-            <nav style="margin-top: 2rem;">
-                <a href="index.html" style="color: white; margin: 0 1rem;">Home</a>
-                <a href="features.html" style="color: white; margin: 0 1rem;">Features</a>
-                <a href="team.html" style="color: white; margin: 0 1rem;">Team</a>
-                <a href="case-studies.html" style="color: white; margin: 0 1rem;">Case Studies</a>
-                <a href="contact.html" style="color: white; margin: 0 1rem;">Contact</a>
-            </nav>
-            <p style="margin-top: 2rem; opacity: 0.7;">© 2026 MMM Unwrapped. All rights reserved.</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">MMM Unwrapped</div>
+                    <p>Enterprise MMM. Startup Pricing. Full Transparency.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="features.html">How It Works</a>
+                        
+                        <a href="contact.html">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="team.html">Team</a>
+                        <a href="https://www.linkedin.com/company/mmm-unwrapped/" target="_blank">LinkedIn</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MMM Unwrapped. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <style>
+        @media (max-width: 768px) {
+            section div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </body>
 </html>
