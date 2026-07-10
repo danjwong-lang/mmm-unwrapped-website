@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who We Are - MMM Unwrapped</title>
+    <title>Team - MMM Unwrapped</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-            <div class="logo">MMM Unwrapped</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="team.html" class="active">Who We Are</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">MMM Unwrapped</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">How It Works</a></li>
+                    <li><a href="team.html" class="active">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="cta-button">Get Started</a>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -29,39 +32,53 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="section-container">
-            <h1>Who We Are</h1>
-            <p>Meet the team making media mix modeling accessible and transparent</p>
+            <h1>Meet the Team</h1>
+            <p>30 years of combined performance marketing experience at Shutterfly, Green Dot, The RealReal, and Stitch Fix</p>
+        </div>
+    </section>
+
+    <!-- Why We Built This -->
+    <section style="background: var(--off-white); padding: 4rem 0;">
+        <div class="container">
+            <div class="section-label">Why We Built This</div>
+            <h2>The same problem, everywhere</h2>
+            <p class="section-intro">
+                At every company, we encountered the same challenge: spending millions on paid media with no clear way to understand what was actually working, especially upper funnels like TV. The tools that could answer that question cost $100K+ and came with year-long contracts plus months before getting a readout.
+            </p>
+            <p class="section-intro" style="margin-top: 1.5rem;">
+                We kept asking: why does it have to be this way? All we needed was a quick readout without a long commitment. So we built MMM Unwrapped—enterprise-grade media mix modeling at a price point mid-market teams can actually afford.
+            </p>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team">
-        <div class="section-container">
-            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
                 
                 <!-- Nadir Hussain -->
-                <div class="team-member" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <div style="width: 150px; height: 150px; margin: 0 auto 1.5rem; overflow: hidden; border-radius: 50%; border: 4px solid var(--accent-teal);">
-                        <img src="nadir.jpeg" alt="Nadir Hussain" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;">
+                <div class="team-member-card">
+                    <div class="team-photo">
+                        <img src="nadir.jpeg" alt="Nadir Hussain">
                     </div>
-                    <h3 style="text-align: center; color: var(--primary-blue); font-size: 1.75rem; margin-bottom: 0.5rem;">Nadir Hussain</h3>
-                    <p style="text-align: center; color: var(--accent-teal); font-weight: 600; margin-bottom: 1.5rem;">Founder</p>
-                    <p style="color: var(--gray-text); line-height: 1.7;">Nadir brings over 20 years of expertise in growth marketing, data analytics, and data science to MMM Unwrapped. Most recently VP of Digital Marketing at Green Dot Corporation, Nadir led customer acquisition across all digital channels while pioneering advanced measurement techniques including attribution modeling, incrementality testing, and marginal ROI optimization. His career spans leadership roles at Shutterfly (VP Customer Acquisition), Hippo Insurance, JustAnswer, and eBay, where he consistently drove revenue targets through data-driven marketing strategies. Nadir co-founded Open Sky Analytics, a digital agency serving clients like Wealthfront and Gabb Wireless. He holds an MS in Electrical Engineering from Stanford, an MBA from UC Berkeley Haas, and a Machine Learning certificate from MIT. Nadir has also taught digital marketing at UC Berkeley Extension.</p>
-                    <div style="text-align: center; margin-top: 1.5rem;">
-                        <a href="https://www.linkedin.com/in/nadirhussain/" target="_blank" style="color: var(--accent-teal); text-decoration: none; font-weight: 600;">Connect on LinkedIn →</a>
+                    <h3>Nadir Hussain</h3>
+                    <p class="team-title">Founder</p>
+                    <p class="team-bio">Nadir brings over 20 years of expertise in growth marketing, data analytics, and data science to MMM Unwrapped. Most recently VP of Digital Marketing at Green Dot Corporation, Nadir led customer acquisition across all digital channels while pioneering advanced measurement techniques including attribution modeling, incrementality testing, and marginal ROI optimization. His career spans leadership roles at Shutterfly (VP Customer Acquisition), Hippo Insurance, JustAnswer, and eBay, where he consistently drove revenue targets through data-driven marketing strategies. Nadir co-founded Open Sky Analytics, a digital agency serving clients like Wealthfront and Gabb Wireless. He holds an MS in Electrical Engineering from Stanford, an MBA from UC Berkeley Haas, and a Machine Learning certificate from MIT. Nadir has also taught digital marketing at UC Berkeley Extension.</p>
+                    <div class="team-linkedin">
+                        <a href="https://www.linkedin.com/in/nadirhussain/" target="_blank">Connect on LinkedIn →</a>
                     </div>
                 </div>
 
                 <!-- Dan Wong -->
-                <div class="team-member" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <div style="width: 150px; height: 150px; margin: 0 auto 1.5rem; overflow: hidden; border-radius: 50%; border: 4px solid var(--accent-teal);">
-                        <img src="dan.jpeg" alt="Dan Wong" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                <div class="team-member-card">
+                    <div class="team-photo">
+                        <img src="dan.jpeg" alt="Dan Wong" style="object-position: center 30%;">
                     </div>
-                    <h3 style="text-align: center; color: var(--primary-blue); font-size: 1.75rem; margin-bottom: 0.5rem;">Dan Wong</h3>
-                    <p style="text-align: center; color: var(--accent-teal); font-weight: 600; margin-bottom: 1.5rem;">Advisor</p>
-                    <p style="color: var(--gray-text); line-height: 1.7;">Dan is a proven marketing strategist with over 15 years of experience driving customer acquisition and growth at leading consumer and fintech companies. Most recently, he served as Director of Growth and Media at Stitch Fix, leading full-funnel media strategies that resulted in a 20% increase in brand searches. Previously, as Sr. Director of Acquisition Marketing at The RealReal, Dan achieved record high new customers at a record low customer acquisition cost (CAC) by implementing rigorous analytics and Media Mix Modeling. His deep expertise spans performance marketing, media mix modeling, attribution, and conversion optimization across channels including paid search, social, TV/OTT, and display. Dan holds an MBA in Marketing and Finance from San Francisco State University.</p>
-                    <div style="text-align: center; margin-top: 1.5rem;">
-                        <a href="https://www.linkedin.com/in/danjwong/" target="_blank" style="color: var(--accent-teal); text-decoration: none; font-weight: 600;">Connect on LinkedIn →</a>
+                    <h3>Dan Wong</h3>
+                    <p class="team-title">Strategic Advisor</p>
+                    <p class="team-bio">Dan is a proven marketing strategist with over 15 years of experience driving customer acquisition and growth at leading consumer and fintech companies. Most recently, he served as Director of Growth and Media at Stitch Fix, leading full-funnel media strategies that resulted in a 20% increase in brand searches. Previously, as Sr. Director of Acquisition Marketing at The RealReal, Dan achieved record high new customers at a record low customer acquisition cost (CAC) by implementing rigorous analytics and Media Mix Modeling. His deep expertise spans performance marketing, media mix modeling, attribution, and conversion optimization across channels including paid search, social, TV/OTT, and display. Dan holds an MBA in Marketing and Finance from San Francisco State University.</p>
+                    <div class="team-linkedin">
+                        <a href="https://www.linkedin.com/in/danjwong/" target="_blank">Connect on LinkedIn →</a>
                     </div>
                 </div>
 
@@ -70,8 +87,8 @@
     </section>
 
     <!-- Mission Section -->
-    <section>
-        <div class="section-container">
+    <section style="background: var(--off-white);">
+        <div class="container">
             <div class="section-header">
                 <h2>Our Mission</h2>
                 <p>Democratizing access to transparent, accurate media mix modeling</p>
@@ -79,26 +96,39 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
                     <h3>Transparency First</h3>
                     <p>We believe marketers deserve to understand exactly how their models work, not just trust a black box.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">💰</div>
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
                     <h3>Accessible Pricing</h3>
                     <p>High-quality MMM shouldn't be limited to enterprise budgets. We're making it affordable for growing businesses.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🔬</div>
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
                     <h3>Rigorous Science</h3>
                     <p>We combine statistical rigor with practical business understanding to deliver insights you can trust and act on.</p>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="contact.html" class="cta-button">Join Our Journey</a>
+                <a href="contact.html" class="primary-cta">Join Our Journey</a>
             </div>
         </div>
     </section>
@@ -106,19 +136,93 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="logo" style="margin-bottom: 1rem; font-size: 1.75rem;">MMM Unwrapped</div>
-            <p>Transparent Media Mix Modeling for smarter marketing decisions</p>
-            <nav style="margin-top: 2rem;">
-                <a href="index.html" style="color: white; margin: 0 1rem;">Home</a>
-                <a href="features.html" style="color: white; margin: 0 1rem;">Features</a>
-                <a href="team.html" style="color: white; margin: 0 1rem;">Team</a>
-                <a href="case-studies.html" style="color: white; margin: 0 1rem;">Case Studies</a>
-                <a href="contact.html" style="color: white; margin: 0 1rem;">Contact</a>
-            </nav>
-            <p style="margin-top: 2rem; opacity: 0.7;">© 2026 MMM Unwrapped. All rights reserved.</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">MMM Unwrapped</div>
+                    <p>Enterprise MMM. Startup Pricing. Full Transparency.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="features.html">How It Works</a>
+                        
+                        <a href="contact.html">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="team.html">Team</a>
+                        <a href="https://www.linkedin.com/company/mmm-unwrapped/" target="_blank">LinkedIn</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MMM Unwrapped. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <style>
+        .team-member-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(10, 22, 40, 0.08);
+        }
+
+        .team-photo {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 1.5rem;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid var(--accent);
+        }
+
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .team-member-card h3 {
+            text-align: center;
+            color: var(--navy);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-title {
+            text-align: center;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .team-bio {
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .team-linkedin {
+            text-align: center;
+        }
+
+        .team-linkedin a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .team-linkedin a:hover {
+            color: var(--blue);
+        }
+    </style>
 </body>
 </html>
