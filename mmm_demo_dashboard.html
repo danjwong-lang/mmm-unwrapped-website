@@ -450,7 +450,7 @@ function calculateProfit(dailySpend, channel) {
     const { alpha, beta, r } = channel;
     if (alpha === 0) return 0;
     const adjustedSpend = dailySpend / (1 - r);
-    return alpha * Math.pow(adjustedSpend, beta) * 365;
+    return alpha * Math.pow(adjustedSpend, beta);
 }
 
 function calculateMarginalROI(dailySpend, channel) {
